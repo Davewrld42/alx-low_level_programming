@@ -4,15 +4,16 @@
  *
  */
 
-#include "stdio.h"
+#include "main.h"
 
 /**
- * main - Prints "Putchar" followed by a new line.
+ * main - Prints "_Putchar" followed by a new line.
  *
  * Return: Always 0.
  */
 int main(void)
 {
+	_putchar('_');
 	_putchar('P');
 	_putchar('u');
 	_putchar('t');
