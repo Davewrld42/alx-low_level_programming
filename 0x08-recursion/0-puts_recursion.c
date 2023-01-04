@@ -1,15 +1,22 @@
-#include "holberton.h"
+/*
+ * File: 0-puts_recursion.c
+ * Auth: David Eke
+ */
+
+#include "main.h"
 
 /**
- * _print_rev_recursion - Entry point
- * @s: input
- * Return: Always 0 (Success)
+ * _puts_recursion - Prints a string, followed by a new line.
+ * @s: The string to be printed.
  */
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
-	if (*s != '\0')
-		_print_rev_recursion(s + 1);
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+
 	else
-		return;
-	_putchar(*s);
+		_putchar('\n');
 }
