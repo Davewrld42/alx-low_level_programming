@@ -1,20 +1,20 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _memcpy - fnct to copy memory content source to a char destination .
- * @dest: memory allocation of the destination
- * @src: memory content to copy from the src
- * @n: content in byte to copy
+ * _memcpy - Copies memory area
  *
- * Return: pointer to dest
+ * @dest: where to copy the memory to
+ * @n: the number of bytes
+ * @src: the memory area to copy from
+ *
+ * Return: a pointer to @dest
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
-	{
-		*(dest + i) = *(src + i);
-	}
+		dest[i] = src[i];
+
 	return (dest);
 }
